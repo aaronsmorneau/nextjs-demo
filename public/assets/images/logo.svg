@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 27.0 18.0">
+  <ns0:path fill="#333" d="M10 3C8.3 3 6.8 3.8 5.8 5L3 10L5.8 15C6.8 16.2 8.3 17 10 17C11.7 17 13.2 16.2 14.2 15L17 10L14.2 5C13.2 3.8 11.7 3 10 3z" />
+  <ns0:circle cx="10" cy="8" r="1" fill="#fff" />
+  <ns0:circle cx="13" cy="7" r="0.5" fill="#fff" />
+</ns0:svg>
