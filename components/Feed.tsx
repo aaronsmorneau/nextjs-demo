@@ -37,7 +37,6 @@ const Feed = () => {
 
   const fetchPosts = async () => {
     const response = await fetch("/api/dweet", {
-      method: "GET",
       cache: "no-store"
     });
     const data = await response.json();
