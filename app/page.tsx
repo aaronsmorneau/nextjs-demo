@@ -1,4 +1,4 @@
-//import Feed from '@components/Feed';
+"use client";
 
 import Feed from "@components/Feed";
 
