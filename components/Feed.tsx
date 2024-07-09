@@ -36,7 +36,9 @@ const Feed = () => {
   const [searchedResults, setSearchedResults] = useState<Post[]>([]);
 
   const fetchPosts = async () => {
-    const response = await fetch("/api/dweet");
+    const response = await fetch("/api/dweet", {
+      cache: "no-cache",
+    });
     const data = await response.json();
 
     console.log('data is: ', data);

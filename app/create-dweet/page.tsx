@@ -22,6 +22,7 @@ const CreateDweet = () => {
     try {
       const response: Response = await fetch("/api/dweet/new", {
         method: "POST",
+        cache: "no-cache",
         body: JSON.stringify({
           dweet: post.dweet,
           user: session?.user,
