@@ -5,6 +5,8 @@ export const GET = async (request): Promise<Response> => {
     try{
         await connectToDB();
         const dweets = await Dweet.find({});
+
+        console.log('dweets are: ', dweets);
         return new Response(JSON.stringify(dweets), { status: 200 });
     } catch ( error ) {
         return new Response("Failed to retrieve dweets", { status: 500 });
