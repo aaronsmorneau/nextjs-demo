@@ -5,7 +5,7 @@ export const GET = async (request): Promise<Response> => {
     try{
         console.log("GET request made to /api/dweet");
         await connectToDB();
-        const dweets = await Dweet.find({});
+        const dweets = await Dweet.find({}, {cache: false}).exec();
 
         console.log('dweets are: ', dweets);
         return new Response(JSON.stringify(dweets), { status: 200 });
